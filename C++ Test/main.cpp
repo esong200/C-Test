@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
-
+using namespace std;
+class testClass{
+    int i=17;
+    public:int returnInt(){
+        return i;
+    }
+};
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "Hello, World!\n";
+    cout << "Test\n";
+    int i = 0;
+    cin >> i;
+    cout << "int i = " + to_string(i) + "\n";
+    testClass intGenerator;
+    cout << "int j = " + to_string(intGenerator.returnInt()) + "\n";
     return 0;
 }
