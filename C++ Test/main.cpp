@@ -23,5 +23,18 @@ int main(int argc, const char * argv[]) {
     cout << "int i = " + to_string(i) + "\n";
     testClass intGenerator;
     cout << "int j = " + to_string(intGenerator.returnInt()) + "\n";
+    cout << "Enter first int\n";
+    int a;
+    cin >> a;
+    cout << "Enter second int\n";
+    int b;
+    cin >> b;
+    int newInt = testFunction(a, b);
+    cout << "The product is: " + to_string(newInt) + "\n";
+    
     return 0;
+}
+
+int testFunction(int a, int b) {
+    return a*b;
 }
