@@ -14,6 +14,11 @@ class testClass{
         return i;
     }
 };
+
+int testFunction(int a, int b) {
+    return a*b;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     cout << "Hello, World!\n";
@@ -31,10 +36,7 @@ int main(int argc, const char * argv[]) {
     cin >> b;
     int newInt = testFunction(a, b);
     cout << "The product is: " + to_string(newInt) + "\n";
-    
     return 0;
 }
 
-int testFunction(int a, int b) {
-    return a*b;
-}
+
